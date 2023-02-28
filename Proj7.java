@@ -10,7 +10,7 @@ import java.awt.Color;
 */
 
 
-public class rbarre4Proj7
+public class Proj7
 {
   public static void main (String[] args)
   {
