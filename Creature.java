@@ -1,3 +1,12 @@
+/* ------------------------------------------------
+* Author: Robert L Barrera
+* Class: CS 211, Spring 2017
+* Program: #7
+* System: Windows 7, Eclipse
+* April 24, 2017
+* -------------------------------------------------
+*/
+
 public class Creature {
 	private Island isl;
 	private int x;

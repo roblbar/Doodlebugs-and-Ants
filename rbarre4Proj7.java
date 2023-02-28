@@ -3,25 +3,18 @@ import java.awt.Color;
 /* ------------------------------------------------
 * Author: Robert L Barrera
 * Class: CS 211, Spring 2017
-* Program: #2
+* Program: #7
 * System: Windows 7, Eclipse
 * April 24, 2017
 * -------------------------------------------------
 */
 
 
-/**  Initial attempt at creating some code to get things going for Project 7
-  * 
-  * This code contains 2 classes
-  *   Island - the 20x20 area for the Creatures
-  *   Beetle - objects that not quite what is required but give me a good starting point
-  */
-
 public class rbarre4Proj7
 {
   public static void main (String[] args)
   {
-	  int sleep = 100;
+	  int sleep = 400;
 	  if(args.length > 0 && args[0].equals("-d")){
 		  sleep = Integer.parseInt(args[1]);
 	  }
@@ -32,13 +25,13 @@ public class rbarre4Proj7
     // create 100 Ants
     for (int i = 0 ; i < 100 ; i++)
     {
-      Ant a = new Ant(island, true);	// True for an Ant
+      new Ant(island, true);	// True for an Ant
     }
     
     // create 5 Doodlebugs
     for (int i = 0 ; i < 5 ; i++)
     {
-      Doodlebug d = new Doodlebug(island, false);	// False if not an ant
+      new Doodlebug(island, false);	// False if not an ant
     }
     
     // run simulation for 20 days
@@ -195,10 +188,10 @@ class Island
     
     Creature c = grid[currX][currY];
     if (c.isAnt()) {    
-    	Ant ant = new Ant(this, nextX, nextY, true);	// True for ant
+    	new Ant(this, nextX, nextY, true);	// True for ant
     }
     else {
-    	Doodlebug doo = new Doodlebug(this, nextX, nextY, false);	// False for doodlebug
+    	new Doodlebug(this, nextX, nextY, false);	// False for doodlebug
     }
     return true;
   }
